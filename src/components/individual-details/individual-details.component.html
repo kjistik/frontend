@@ -1,0 +1,39 @@
+
+<div *ngIf = "individuo">
+    <label for="individuo-name">Nombre del alumno: </label>
+  <input id="individuo-name" [(ngModel)] = "individuo.name" placeholder="nombre">
+  <h1>{{individuo.id}}</h1>
+<div><span>detalles de </span>{{individuo.name | uppercase}} </div>
+<div>
+    <label for="name">Nota 1: {{individuo.nota1}}</label> 
+    <input id="name" [(ngModel)]="individuo.nota1" placeholder="nota 1">
+  </div>
+  <div>
+    <label for="name">Nota 2: {{individuo.nota2}}</label>
+    <input id="name" [(ngModel)]="individuo.nota2" placeholder="nota 2">
+  </div>
+  <div>
+    <label for="name">Nota 3: {{individuo.nota3}}</label>
+    <input id="name" [(ngModel)]="individuo.nota3" placeholder="nota 3">
+  </div>
+  <div>
+    <label for="name">Nota 4: {{individuo.nota4}}</label>
+    <input id="name" [(ngModel)]="individuo.nota4" placeholder="nota 4">
+  </div>
+  <div>
+    <label for="name">Nota 5: {{individuo.nota5}}</label>
+    <input id="name" [(ngModel)]="individuo.nota5" placeholder="nota 5">
+  </div>
+  <div>
+    <label for="name">Nota 6: {{individuo.nota6}}</label>
+    <input id="name" [(ngModel)]="individuo.nota6" placeholder="nota 6">
+  </div>
+  <div>
+    <label for="name">Nota 7: {{individuo.nota7}}</label>
+    <input id="name" [(ngModel)]="individuo.nota7" placeholder="nota 7">
+  </div>
+  <div>
+    <button type="button" (click)="save()">Guardar</button>
+  </div>
+  <button type="button" (click)="goBack()">go back</button>
+  </div>
